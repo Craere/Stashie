@@ -28,6 +28,7 @@ namespace Stashie
             CustomRefillOptions = new Dictionary<string, RangeNode<int>>();
             VisitTabWhenDone = new ToggleNode(false);
             TabToVisitWhenDone = new RangeNode<int>(0, 0, 40);
+	    LeftSpamKey = new HotkeyNode(Keys.X);
         }
 
         [Menu("Settings", 500)]
@@ -61,5 +62,8 @@ namespace Stashie
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
         };
+
+	[Menu("Spam Leftclick", "Spams Leftclick whilst beeing in Stash / Trade Window")]
+        public HotkeyNode LeftSpamKey { get; set; }
     }
 }

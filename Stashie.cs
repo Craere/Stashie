@@ -545,6 +545,17 @@ namespace Stashie
                     Core.ParallelRunner.Run(CoroutineWorker);
                 }
             }
+
+	    if (Input.IsKeyDown(Settings.LeftSpamKey.Value)) {
+                if (uiTabsOpened || GameController.IngameState.IngameUi.TradeWindow.IsVisible) {
+                    if (!Input.IsKeyDown(Keys.LControlKey))
+                        Input.KeyDown(Keys.LControlKey);
+                    Thread.Sleep(25);
+                    Input.Click(MouseButtons.Left);
+                    Thread.Sleep(25);
+                    Input.KeyUp(Keys.LControlKey);
+                }
+            }
         }
 
         private IEnumerator ProcessInventoryItems()
