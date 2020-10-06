@@ -178,6 +178,7 @@ namespace Stashie
                 "Divination Cards:\t\t\tClassName=DivinationCard\t\t\t\t\t:Default Tabs\r\n" +
                 "Essences:\t\t\tBaseName^Essence|BaseName^Remnant,ClassName=StackableCurrency:Default Tabs\r\n" +
                 "Fragments:\t\t\tClassName=MapFragment|BaseName^Splinter,ClassName=StackableCurrency|ClassName=LabyrinthMapItem|BaseName^Scarab\t:Default Tabs\r\n" +
+                "Sacrifice:\t\t\tBaseName^Sacrifice\t:Default Tabs\r\n" +
                 "Maps:\t\t\tClassName=Map,!blightedMap\t\t\t:Default Tabs\r\n" +
                 "Fossils/Resonators:\t\t\tpath^CurrencyDelveCrafting | path^DelveStackableSocketableCurrency\t:Default Tabs" +
                 "Gems:\t\t\t\tClassName^Skill Gem,ItemQuality=0\t\t\t:Default Tabs\r\n" +
